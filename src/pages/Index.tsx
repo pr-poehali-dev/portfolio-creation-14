@@ -294,23 +294,38 @@ const Index = () => {
 
       <footer className="py-12 px-6 border-t border-gray-100">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-2xl font-bold text-primary">Portfolio</div>
-            <div className="flex gap-6">
-              <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                <Icon name="Github" size={20} />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                <Icon name="Linkedin" size={20} />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                <Icon name="Instagram" size={20} />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-primary transition-colors">
-                <Icon name="Mail" size={20} />
-              </a>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="flex flex-col items-center md:items-start gap-2">
+              <div className="text-2xl font-bold text-primary">Portfolio</div>
+              <p className="text-sm text-gray-500">Сканируйте для быстрого доступа</p>
             </div>
-            <div className="text-sm text-gray-600">
+            
+            <div className="flex items-center gap-8">
+              <Card className="p-3 hover-scale">
+                <img 
+                  src="https://cdn.poehali.dev/projects/27ec8301-348f-4dd4-8c8d-2f93d1909bbc/files/80bed8db-d542-4795-95e1-db0d3e67f9a6.jpg"
+                  alt="QR-код сайта"
+                  className="w-24 h-24 object-contain"
+                />
+              </Card>
+              
+              <div className="flex gap-6">
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+                  <Icon name="Github" size={20} />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+                  <Icon name="Linkedin" size={20} />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+                  <Icon name="Instagram" size={20} />
+                </a>
+                <a href="#" className="text-gray-600 hover:text-primary transition-colors">
+                  <Icon name="Mail" size={20} />
+                </a>
+              </div>
+            </div>
+            
+            <div className="text-sm text-gray-600 text-center md:text-right">
               © 2024 Portfolio. Все права защищены.
             </div>
           </div>
